@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+  <style>
+  .main-tiaozhuan {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+  }
+  .img-left{
+    height: 100vh;
+    float: left;
+  }
+  .img-content{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .tiaozhuan-right{
+    float: left;
+    height: 100%;
+    padding-left: 90px;
+    padding-top: 200px;
+  }
+  .tiaozhuan-title{
+    font-size: 28px;
+  }
+  .tiaozhuan-btn{
+    padding: 10px 120px;
+    display:inline-block;
+    background: #3646cf;
+    color: #fff;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  </style>
+  <body>
+    <div class="main-tiaozhuan">
+       <div class="img-left">
+         <img class="img-content" src="./images/denglu.jpg" />
+       </div>
+       <div class="tiaozhuan-right">
+         <p class="tiaozhuan-title">模型训练平台</p>
+         <span id="tiaozhuan" class="tiaozhuan-btn">立即访问</span>
+       </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    var btn = document.getElementById("tiaozhuan");
+    btn.onclick=function () {
+    	window.open('http://gammadata.pingan.com/mlp', '_self');
+    }
+  </script>
+</html>
